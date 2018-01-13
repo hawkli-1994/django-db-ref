@@ -8,9 +8,9 @@ Just need a table name, you can immediately get a usable Django model, and immed
 The current version does not support foreign key relationships.
 # -------------------------------
 ```
-In [4]: from monkey_king.testdj import get_my_models
+In [4]: from django-db-introspection.introspection import get_my_models
 
-In [5]: client_device_user = get_my_models('monkey_king', 'client_device_user')
+In [5]: client_device_user = ModelFactory('monkey_king', 'client_device_user').models
 class ClientDeviceUser(models.Model):
     box_id = models.CharField(max_length=20)
     device_id = models.CharField(max_length=50, blank=True, null=True)
