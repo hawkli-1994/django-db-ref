@@ -1,4 +1,7 @@
 # django-db-introspection
+```
+pip3 install django-db-introspection
+```
 Django 数据库内省工具, 通过数据表名就可以动态创建一个即时可用的Django models对象。
 仅仅需要一个表名，你就可以立即得到一个可用的Django 模型，并立即进行查询，更新等操作，开箱即用。
 目前版本暂时不支持外键关联关系。
