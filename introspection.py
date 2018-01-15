@@ -38,11 +38,7 @@ class ModelFactory:
         ]
         table_description = connection.introspection.get_table_description(
             cursor, table_name)
-        primary_key_column = connection.introspection.get_primary_key_column(
-            cursor, table_name)  # 主键字段
 
-        table_description = connection.introspection.get_table_description(
-            cursor, table_name)
 
         used_column_names = []
         column_to_field_name = {}
